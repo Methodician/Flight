@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    /*To keep from hiding under navbar*/
+    /*padding-top: 50px;*/
+    font-family: "Gill Sans", Arial, sans-serif;
+}
+
+
+
+/* //// CAROUSEL STUFF THAT CAN'T BE DONE IN COMPONENT \\\\ */
+.carousel-caption {
+    background-color: #f3f3f3;
+    border-radius: 0 0 10px 10px;
+    position: initial;
+    height: 40px;
+}
+.carousel-caption h4, 
+.carousel-caption p {
+    color: #636363;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 0 0 rgba(0,0,0,.6);
+}
+.carousel-caption h4 {
+    margin-bottom: 15px;
+}
+
+.carousel-control {
+    height: 40px;
+    top: initial;
+}
+
+.carousel-control span {
+    top: calc(50% - 19px) !important;
+    color: #444;
+    font-size: 50px !important;
+}
+
+.carousel-indicators {
+    width: 56%;
+}
+
+.carousel-indicators li {
+    border: 1.5px solid #b1b1b1;
+    margin-left: 12px;
+}
+
+.carousel-indicators .active {
+    border: 0px solid #b1b1b1;
+    background-color: #333;
+    margin-left: 12px;
+}
+
+/* 
+//////////////// RESPONSIVE \\\\\\\\\\\\\\\\\\ 
+*/
+
+/*most phones landscape mode*/
+@media screen and (min-width : 500px){
+
+}
+
+/*iPad portrait mode*/
+@media screen and (min-width: 760px){
+    .carousel-caption,
+    .carousel-control {
+        height: 65px;
+    }
+
+    .carousel-indicators li {
+        margin: 0 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .carousel-indicators .active {
+        margin: 0 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+}
+
+/*iPad landscape mode*/
+@media screen and (min-width: 1020px){
+
+
+}
+
+/*Desktop view +*/
+@media screen and (min-width : 1200px) {
+    .carousel-caption,
+    .carousel-control {
+        height: 100px;
+    }
+
+    .carousel-indicators {
+        bottom: 10px;
+    }
+}
+

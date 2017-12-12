@@ -1,0 +1,572 @@
+
+section{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    width: calc(100vw - 20px);
+}
+
+/*section #hero {
+    background: rgba(0,0,0,0.35);
+    margin-bottom: 85px;
+}*/
+
+.section-header{
+    text-align: center;
+    color: #fff;
+    background: #466ed5;
+    /*color: #adadad;
+    background: rgba(61, 69, 111, 0.98);*/
+    padding: 30px 0px;
+    padding-bottom: 35px;
+    /*border-bottom: 2px solid black;*/
+}
+
+.jumbotron {
+    padding: 20vh 3vw 4.5vh;
+    /*background-color: #fff;*/
+    background-color: #313131;
+    color: #fff;
+    margin: -15px 0px 0px;
+    border-radius: 0 0 10px 10px;
+    /*border-bottom: 6px solid #999;*/
+}
+.jumbotron h1, p {
+    margin: -5px;
+}
+.jumbotron p {
+    font-size: 14px;
+}
+
+.clearfix {
+    padding: 0;
+}
+#hero {
+    text-align: center;
+    /*height: calc(100vh - 70px);*/
+    height: 100vh;
+    /*background: #fff url(<../../assets/images/flightLogo_notext.png) 50% 55% no-repeat fixed;*/
+    /*background-size: 85%;*/
+}
+#hero a {
+    color: #fff;
+}
+#hero a:hover {
+    border-bottom: 5px solid rgba(61, 69, 111, 0.95);
+    text-decoration: none;
+}
+#homeHeading {
+    margin-top: 0;
+}
+#heroImg {
+    width: 100%;
+    padding-top: 10vh;
+}
+hr {
+    border-top: 3px dotted #8c8b8b;
+    margin: 5px 15px 10px;
+}
+
+#overview {
+    padding: 50px 25px 70px;
+    text-align: center;
+    margin: 0;
+    width: initial;
+    font-weight: 200;
+}   
+#overview h1, h2, h3, h4, p {
+    color: white;
+}
+#overview h3 {
+    margin-top: 0;
+}
+#overview p {
+    margin: 5px 0;
+    font-size: large;
+}
+#awesome-p {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: large;
+}
+.italic {
+    font-style: italic;
+}
+.equidistant-container {
+    display: block;
+}
+.overview-item {
+    /*height: 250px;*/
+    width: 220px;
+}
+
+/*TODO: JACOB CLEAN THIS UP!!!!!*/
+.overview-circle {
+    height: 200px;
+    width: 200px;
+    /*background-color: white;*/
+    /*border-radius: 50%;*/
+    margin: 50px auto 30px;
+}
+.no-overflow {
+    overflow: hidden;
+}
+.overview-image {
+    height: 100%;
+    width: 100%;
+}
+
+.icons-example{
+    /*background-color: sandybrown;*/
+    height: 75px;
+    width: 75px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#graphics {
+    /*background-color: #333;*/
+    /*background-color: #b2bbf6;*/
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+    width: initial;
+}
+
+/*.graphics-circle {
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+    margin: 5px;
+}*/
+.graphics-example{
+    /*height: 100%;
+    width: 100%;*/
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.sites-example{
+    width: calc(100vw - 60px);
+    margin: 20px 30px 15px;;
+    display: inline-block;
+}
+
+.apps-placeholder{
+    /*background-color: turquoise;*/
+    height: 200px;
+    width: 100%;
+    margin: 5px;
+    display: inline-block;
+}
+
+.section-box{
+    text-align: center;
+}
+
+#responsive, #icons, #graphics, #sites, #apps {
+    /*padding-top: 20px;*/
+    padding: 0px 0 50px;
+}
+.darkBGtitle {
+    background-color: #333;
+    width: 100vw;
+}
+.whiteBGtitle {
+    background-color: #fff;
+}
+.whiteBGtitle h2 {
+    color: #313131;
+}
+#responsive{
+    text-align: center;
+}
+#responsive>h2{
+    transform: translateY(200px);
+}
+.laptop-example{
+    width: 85vw;
+    margin-top: -60px;
+    margin-bottom: -80px;
+}
+.tablet-example{
+    width: 55vw;
+    /*padding-top: 19px;*/
+}
+.mobile-example{
+    width: 25vw;
+}
+
+#icons {
+    background-color: #466ed5;
+    /*background-color: sandybrown;*/
+    margin: 0;
+    /*margin-bottom: 80px;*/
+    width: 100vw;
+    padding: 0px 0px 50px;
+}
+#apps {
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+}
+
+.web-screenshots {
+    padding: 0;
+    margin: 0;
+}
+
+/*big phones portrait*/
+@media screen and (min-width: 370px) {
+    /*#overview {
+        padding: 25px 35px 45px;
+    }*/
+}
+
+/*most phones landscape mode*/
+@media screen and (min-width : 500px){    
+    #heroImg {
+        width: 50%;
+        padding-top: 2vh;
+    }
+
+    .jumbotron {
+        padding: 8vh 3vw 4.5vh;
+    }
+
+    .section-header{
+        padding-top: 25px;
+    }
+
+    #graphics, 
+    #sites, 
+    #apps {
+        padding: 0 0 50px;
+    }
+    
+    .laptop-example{
+        margin-top: -103px;
+    }
+
+    #icons {
+        padding: 0 80px 40px;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -80px;
+    }
+
+    #graphics {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sites-example{
+        width: calc(100vw - 120px);
+        margin: 20px 60px 20px;
+    }
+
+/*    .equidistant-container {
+        padding: 0 45px;
+    }
+    .overview-item {
+        height: 160px;
+        width: 110px;
+    }
+
+    .overview-circle {
+        height: 110px;
+        width: 110px;
+    }*/
+}
+
+/*Nexus 6P and iPhone6 Plus landscape*/
+@media screen and (min-width : 732px) {
+    #heroImg {
+        width: 53%;
+    }
+
+    .equidistant-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .overview-item {
+        width: 200px;
+    }
+
+    .overview-circle {
+        height: 200px;
+        width: 200px;
+        margin-top: 45px;
+    }
+
+    .laptop-example{
+        margin-top: -115px;
+        width: 80vw;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -90px;
+    }
+
+    .tablet-example {
+        width: 53vw;
+    }
+
+    .mobile-example {
+       width: 24vw;
+    }
+
+    .sites-example{
+        width: calc(100vw - 160px);
+        margin: 20px 80px 25px;
+    }
+}
+
+/*iPad portrait mode*/
+@media screen and (min-width : 760px){
+    .jumbotron {
+        padding: 15vh 3vw 4.5vh;
+        /*margin-top: -60px;*/
+        border-radius: 0 0 26px 26px;
+        /*border-bottom: 13px solid #999;*/
+        -webkit-box-shadow: 0px 15px 20px -6px #adadad;
+        -moz-box-shadow: 0px 15px 20px -6px #adadad;
+        box-shadow: 0px 15px 20px -6px #adadad;
+    }
+
+    .jumbotron p {
+        font-size: 1.8em;
+    }
+
+    #heroImg {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    #jumbo-container {
+        padding: 0 5vw;
+    }
+
+    #overview {
+        padding: 70px 50px 85px;
+    }
+
+    .container {
+        width: initial;
+    }
+    
+    #homeHeading {
+        font-size: 4.8em;
+        margin: -13px;
+    }
+
+    h2{
+        font-size: 3.5em;
+    }
+
+    /*.equidistant-container {
+        padding: 0 65px;
+    }
+    .overview-item {
+        height: 190px;
+        width: 130px;
+    }
+
+    .overview-circle {
+        height: 130px;
+        width: 130px;
+    }*/
+
+    #graphics, 
+    #sites,
+    #icons {
+        padding: 0 0 50px;
+    }
+
+    /*#icons {
+        padding: 30px 0px;
+    }*/
+
+    .sites-example{
+    width: calc(100vw - 120px);
+    margin: 40px 60px 35px;;
+}
+
+}
+
+/*iPad landscape mode*/
+@media screen and (min-width : 1020px){
+    #homeHeading {
+        margin: -11px;
+        font-size: 2.5em;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
+    }
+
+    #hero {
+        font-size: 1.5em;
+        background-position-y: 80%;
+        background-size: 50%;
+    }
+    
+    #heroImg {
+        width: 60%;
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .equidistant-container {
+        padding: 0 85px;
+    }
+/*    .overview-item {
+        height: 220px;
+        width: 145px;
+    }
+
+    .overview-circle {
+        height: 145px;
+        width: 145px;
+    }
+*/
+    #responsive{
+        padding-top: 10px;
+    }
+
+    .laptop-example{
+        margin-top: -160px;
+        width: 73vw;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -135px;
+        margin-bottom: 5px;
+    }
+
+    .tablet-example {
+        width: 48vw;
+    }
+
+    .mobile-example {
+       width: 22vw;
+    }
+
+    .icons-example{
+        /*background-color: sandybrown;*/
+        height: 95px;
+        width: 95px;
+    }
+
+    .graphics-example{
+        /*background-color: lightsteelblue;*/
+        height: 180px;
+        width: 180px;
+    }
+
+    .sites-example {
+        width: calc(100vw - 300px);
+    }
+}
+
+/*Desktop view*/
+@media screen and (min-width : 1200px) {
+    #homeHeading {
+        margin: -16px;
+        font-size: 2.5em;
+    }
+
+    #heroImg {
+        width: 47%;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    #hero {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 4em;
+        padding-top: 10px;
+    }
+
+    .equidistant-container {
+        padding: 10px;
+        padding-top: 0;
+        margin: 0 145px 5px;
+    }
+    
+    .overview-item {
+        width: 275px;
+    }
+
+    .overview-circle {
+        height: 250px;
+        width: 250px;
+    }
+
+    #responsive{
+        padding: 10px 50px 70px;
+    }
+
+    .laptop-example{
+        width: calc(100vw - 500px);
+        margin-top: -205px;
+    }
+    .tablet-example, .mobile-example {
+        margin-top: -195px;
+        margin-bottom: -15px;
+    }
+    .tablet-example{
+        width: calc(55vw - 200px);
+    }
+    .mobile-example{
+        width: calc(25vw - 95px);
+    }
+    /*.tablet-example, .mobile-example {
+        margin-top: -120px;
+    }*/
+
+    .icons-example{
+        /*background-color: sandybrown;*/
+        height: 100px;
+        width: 100px;
+    }
+
+    .sites-example {
+        width: calc(100vw - 600px);
+        margin: 0px 60px 35px;
+    }
+}
+
+/*iPad Pro Landscape*/
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+    #heroImg {
+        width: 60%;
+        padding: 0px;
+        margin-top: 31px;
+    }
+
+    .overview-item {
+        width: 300px;
+    }
+
+    .overview-circle {
+        height: 300px;
+        width: 300px;
+       /* margin-top: 45px;*/
+    }
+
+    .equidistant-container {
+        margin: 0 50px 5px;
+    }
+}
