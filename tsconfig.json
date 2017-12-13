@@ -5,7 +5,8 @@
     "baseUrl": "src",
     "paths": {
       "@app/*": ["app/*"],
-      "@components/*": ["app/components/*"]
+      "@components/*": ["app/components/*"],
+      "@animations/*": ["app/animations/*"]
     },
     "sourceMap": true,
     "declaration": false,
