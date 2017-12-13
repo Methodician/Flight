@@ -16,13 +16,18 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { HomeComponent } from '@components/home/home.component';
 import { FooterComponent } from '@components/footer/footer.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+
+//  Services
+import { MediaQueryService } from '@app/services/media-query.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { FooterComponent } from '@components/footer/footer.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MediaQueryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

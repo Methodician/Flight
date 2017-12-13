@@ -6,7 +6,8 @@
     "paths": {
       "@app/*": ["app/*"],
       "@components/*": ["app/components/*"],
-      "@animations/*": ["app/animations/*"]
+      "@animations/*": ["app/animations/*"],
+      "@services/*": ["app/services/*"]
     },
     "sourceMap": true,
     "declaration": false,

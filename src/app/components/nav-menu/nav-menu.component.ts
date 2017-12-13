@@ -1,0 +1,38 @@
+import { Component, OnInit } from '@angular/core';
+import { allNavAnimations } from '@animations/nav.animations'
+import { MediaQueryService } from '@services/media-query.service';
+
+@Component({
+  selector: 'nav-menu',
+  templateUrl: './nav-menu.component.html',
+  styleUrls: ['./nav-menu.component.css'],
+  animations: [allNavAnimations]
+})
+export class NavMenuComponent implements OnInit {
+
+  public isCollapsed: boolean = true;
+  private navList = [
+      { link: 'home', text: 'WORK' },
+      { link: 'apps', text: 'APPS.TOOLS' },
+      { link: 'about', text: 'ABOUT' },
+      { link: 'contact', text: 'CONTACT' }
+  ];
+
+  constructor(private querySvc: MediaQueryService) { }
+
+  ngOnInit() {
+  }
+
+  showArrowButton(){
+    const queryGroup = this.querySvc.deviceGroup.value; //  Alternative to subscribing since I'll be calling this function every resize anyway
+    return !(queryGroup == 'desktop' || queryGroup == 'iPadLandscape' || queryGroup == 'iPadPortrait');
+  }
+
+
+/*showNavBar() {
+    if (this.qrySvc.desktop || this.qrySvc.iPadLandscape || this.qrySvc.iPadPortrait)
+        return true;
+    else return false;
+}*/
+
+}
