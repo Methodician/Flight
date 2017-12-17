@@ -11,6 +11,7 @@ img {
 
 .toggle-button {
     position: fixed;
+    top: 0;
     right: 50vw;
     
     margin: 0;
@@ -48,6 +49,7 @@ img {
      background-color: rgba(28, 27, 23, 0.84); 
  }
 .side-navmenu {
+    top: 0;
     right: 0;
     overflow: hidden;
     border: none;

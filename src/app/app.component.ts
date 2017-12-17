@@ -1,4 +1,3 @@
-// import { MediaQueryService } from './shared/services/media-query.service';
 import { routerTransition } from '@animations/router.animations';
 import { Component } from '@angular/core';
 
