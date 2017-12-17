@@ -5,7 +5,7 @@ import { routerTransition } from '@animations/router.animations';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
-  animations: [routerTransition()]
+  animations: [routerTransition]
 })
 export class FooterComponent implements OnInit {
 

@@ -28,6 +28,10 @@ export class NavMenuComponent implements OnInit {
     return !(queryGroup == 'desktop' || queryGroup == 'iPadLandscape' || queryGroup == 'iPadPortrait');
   }
 
+  clickedOutside(){
+    console.log('clicked');
+  }
+
 
 /*showNavBar() {
     if (this.qrySvc.desktop || this.qrySvc.iPadLandscape || this.qrySvc.iPadPortrait)

@@ -1,5 +1,5 @@
 <!--//// MOBILE NAV MENU \\\\-->
-<div class="side-menu" (clickOutside)="isCollapsed = true">
+<div class="side-menu" (outsideClicked)="clickedOutside()">
   <button *ngIf="showArrowButton()" type="button" class="toggle-button" [@navButtonCollapsed]="isCollapsed" data-toggle="collapse"
     (click)="isCollapsed = !isCollapsed">
     <span class="sr-only">Toggle navigation</span>

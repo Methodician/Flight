@@ -20,6 +20,8 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 //  Services
 import { MediaQueryService } from '@app/services/media-query.service';
+import { AboutComponent } from './components/about/about.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { MediaQueryService } from '@app/services/media-query.service';
     AppComponent,
     HomeComponent,
     FooterComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    AboutComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,
