@@ -12,7 +12,6 @@ export class ContactService {
   submitContact(form: any){
     form.timestamp = firebase.firestore.FieldValue.serverTimestamp();
     form.emailForwarded = false;
-    debugger
     return this.db.collection('contacts').add(form);
   }
 
