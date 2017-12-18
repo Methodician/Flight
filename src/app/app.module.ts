@@ -1,14 +1,16 @@
 
-//  Angular modules
+//  Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
-//  Firebase modules
 import { AngularFireModule } from 'angularfire2';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+import { CollapseDirective, CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 //  Custom modules
-import { AppRoutingModule } from 'app-rounting.module';
+import { AppRoutingModule } from './app-rounting.module';
 
 import { environment } from '../environments/environment';
 
@@ -22,6 +24,10 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { MediaQueryService } from '@app/services/media-query.service';
 import { AboutComponent } from './components/about/about.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
+import { AppsComponent } from '@components/apps/apps.component';
+import { ContactComponent } from '@components/contact/contact.component';
+import { ContactService } from '@app/services/contact.service';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 
 @NgModule({
@@ -31,15 +37,24 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     FooterComponent,
     NavMenuComponent,
     AboutComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    CollapseDirective,
+    AppsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AppRoutingModule
+    AngularFirestoreModule,
+    AppRoutingModule,
+    CarouselModule,
   ],
-  providers: [MediaQueryService],
+  providers: [
+    MediaQueryService,
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
