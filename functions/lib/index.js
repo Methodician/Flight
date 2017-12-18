@@ -15,23 +15,15 @@ exports.emailContactSubmission = functions.firestore
     .document('contacts/{pushId}')
     .onCreate(e => {
     const data = e.data.data();
-    return console.log(data);
-    // const contactInfo = `Contact Name: ${data.name}
-    // Contact Message: ${data.message}
-    // Contact Phone: ${data.phone}`
-    // const mailOptions: any = {
-    //     from: '"Jacob Johnston" <jacob@flight.run>',
-    //     to: 'methodician@gmail.com'
-    // };
-    // console.log(gmailEmail);
-    // console.log(gmailPassword);
-    // mailOptions.subject = 'New contact form request!';
-    // mailOptions.text = contactInfo;
-    // console.log(mailOptions);
-    // console.log(contactInfo);
-    // return mailOptions;
-    // return mailTransport.sendMail(mailOptions)
-    // .then(() => console.log('New contact form forwarded to info@flight.run'))
-    // .catch(err => console.error('There was an error sending the email:', err));
+    const contactInfo = `Contact Name: ${data.name}\r\n Contact Email: ${data.email}\r\n Contact Message: ${data.message}\r\n Contact Phone: ${data.phone}`;
+    const mailOptions = {
+        from: '"Jacob Johnston" <jacob@flight.run>',
+        to: 'methodician@gmail.com',
+        subject: 'New contact form request on flight.run!',
+        text: contactInfo
+    };
+    return mailTransport.sendMail(mailOptions)
+        .then(() => console.log('New contact form forwarded to info@flight.run'))
+        .catch(err => console.error('There was an error sending the email:', err));
 });
 //# sourceMappingURL=index.js.map
