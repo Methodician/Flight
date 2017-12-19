@@ -1,0 +1,15 @@
+.link-list li {
+    list-style: none;
+    text-align: left;
+}
+
+.link-list a{
+    font-size: 18px;
+}
+.link-list > li > p {
+    font-size: 15px;
+}
+
+#external-links h4 {
+    text-align: left;
+}

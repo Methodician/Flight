@@ -5,7 +5,7 @@ import { MediaQueryService } from '@app/services/media-query.service';
 @Component({
   selector: 'app-apps',
   templateUrl: './apps.component.html',
-  styleUrls: ['../../shared/page-styles.css'],
+  styleUrls: ['../../shared/page-styles.css', './apps.component.css'],
   animations: [routerTransition],
   host: { '[@routerTransition]': ''}
 })
