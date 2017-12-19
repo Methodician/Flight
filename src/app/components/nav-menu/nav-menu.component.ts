@@ -12,9 +12,9 @@ export class NavMenuComponent implements OnInit {
 
   public isCollapsed: boolean = true;
   private navList = [
-      { link: 'home', text: 'WORK' },
-      { link: 'apps', text: 'APPS.TOOLS' },
-      { link: 'about', text: 'ABOUT' },
+      { link: 'home', text: 'HOME' },
+      { link: 'apps', text: 'EXAMPLES' },
+      { link: 'about', text: 'TEAM' },
       { link: 'contact', text: 'CONTACT' }
   ];
 
