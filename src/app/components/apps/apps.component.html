@@ -62,11 +62,14 @@
         <accordion-group #cwGroup heading="Community Warehouse">
             <!-- <accordion-group #cwGroup (isOpenChange)="openChange($event, cwGroup)" heading="Community Warehouse"> -->
           <accordion *ngIf="cwGroup._isOpen" closeOthers="true">
+            <div class="app-header">
+                <h3>Community Warehouse</h3>
+            </div>
             <accordion-group heading="Filter functionality examples">
                 <div class="carouselset">
-                    <!-- <div class="app-header">
-                      <p>Filter functionality examples:</p>
-                    </div> -->
+                    <div class="app-header">
+                      <p>Rich and robust filtering functionality to quickly find the entries needed.</p>
+                    </div>
                     <div class="carousel-wrapper">
                       <carousel [interval]="6000" [noWrap]="false">
                         <slide class="carousel-slide" *ngFor="let slide of cwHomeSlides; let index=index" [active]="slide.active">
@@ -81,9 +84,9 @@
             </accordion-group>
             <accordion-group heading="Clean customer process forms">
                 <div class="carouselset">
-                    <!-- <div class="header sub-header">
-                      <p>Clean customer process forms:</p>
-                    </div> -->
+                    <div class="header sub-header">
+                      <p>Intuitive, touch-friendly forms for case managers to guide beneficiaries through warehouse floor picking process.</p>
+                    </div>
                     <div class="carousel-wrapper">
                       <carousel [interval]="6000" [noWrap]="false">
                         <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
@@ -98,9 +101,9 @@
             </accordion-group>
             <accordion-group heading="Detail forms">
                 <div class="carouselset">
-                    <!-- <div class="header sub-header">
-                      <p>Detail forms:</p>
-                    </div> -->
+                    <div class="header sub-header">
+                      <p>Easily go back and edit the details for a given request.</p>
+                    </div>
                     <div class="carousel-wrapper">
                       <carousel [interval]="6000" [noWrap]="false">
                         <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
@@ -115,9 +118,9 @@
             </accordion-group>
             <accordion-group heading="Data maintenance forms">
                 <div class="carouselset">
-                    <!-- <div class="header sub-header">
-                      <p>Data maintenance forms:</p>
-                    </div> -->
+                    <div class="header sub-header">
+                      <p>Administrative portal to update and maintain details about agencies and case managers.</p>
+                    </div>
                     <div class="carousel-wrapper">
                       <carousel [interval]="6000" [noWrap]="false">
                         <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
@@ -135,10 +138,10 @@
         </accordion-group>
         <accordion-group #oilCampGroup heading="Oil Camp Attendant">
             <div *ngIf="oilCampGroup._isOpen" class="carouselset">
-                <!-- <div class="app-header">
+                <div class="app-header">
                   <h3>Oil Camp Attendent</h3>
                   <p>A simple tool for housekeeping to keep track. Similar could be adapted for a hotel...</p>
-                </div> -->
+                </div>
                 <div class="carousel-wrapper">
                   <carousel [interval]="6000" [noWrap]="false">
                     <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
@@ -153,7 +156,7 @@
         </accordion-group>
         <accordion-group #colorMixerGroup heading="Color Mixer">
             <div *ngIf="colorMixerGroup._isOpen" class="app-header">
-                <!-- <h3>Color Mixer</h3> -->
+                <h3>Color Mixer</h3>
                 <p>Play with our <a href="https://csscolormixer.com/" target="_blank">color mixer</a> ! It's fun, but can be useful...</p>
                 <a href="https://csscolormixer.com/" target="_blank">
                   <img *ngIf="deviceGroup=='phonesPortrait' || deviceGroup=='phonesLandscape' || deviceGroup=='iPadPortrait'" id="cssCMapp_img"
