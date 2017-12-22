@@ -7,13 +7,12 @@ import { AngularFireModule } from 'angularfire2';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
-
+// bootstrap
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { AccordionModule } from 'ngx-bootstrap/accordion';
-// import { CollapseDirective, CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 
-
+// material design
+import { MatExpansionModule } from '@angular/material/expansion';
 
 //  Custom modules
 import { AppRoutingModule } from './app-rounting.module';
@@ -36,7 +35,6 @@ import { ContactService } from '@app/services/contact.service';
 
 //  Directives
 import { ClickOutsideDirective } from './directives/click-outside.directive';
-// import { CollapseDirective } from 'ngx-bootstrap/collapse';
 
 
 @NgModule({
@@ -47,7 +45,6 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     NavMenuComponent,
     AboutComponent,
     ClickOutsideDirective,
-    // CollapseDirective,
     AppsComponent,
     ContactComponent
   ],
@@ -60,7 +57,7 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     AppRoutingModule,
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    AccordionModule.forRoot()
+    MatExpansionModule
   ],
   providers: [
     MediaQueryService,

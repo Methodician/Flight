@@ -25,6 +25,9 @@ export class AppsComponent implements OnInit {
     this.addSlides();
   }
 
+  panelChanged(panel){
+    console.log(panel);
+  }
   openChange($e, group){
     console.log($e);
     console.log(group);
