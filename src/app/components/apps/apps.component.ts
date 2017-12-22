@@ -25,6 +25,16 @@ export class AppsComponent implements OnInit {
     this.addSlides();
   }
 
+  openChange($e, group){
+    console.log($e);
+    console.log(group);
+  }
+
+  isOpen(group){
+    console.log(group);
+    return true;
+  }
+
   addSlides() {
     /*this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_open.png',
