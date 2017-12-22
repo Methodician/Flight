@@ -13,6 +13,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 // import { CollapseDirective, CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 
+
+
 //  Custom modules
 import { AppRoutingModule } from './app-rounting.module';
 
