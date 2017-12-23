@@ -1,0 +1,16 @@
+section {
+  height: 900px;
+}
+
+mat-grid-tile figure {
+  align-items: flex-start;
+}
+
+.description {
+  overflow-y: scroll;
+  height: 312px;
+}
+
+.team-image {
+  height: 580px;
+}
