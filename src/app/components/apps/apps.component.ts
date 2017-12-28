@@ -7,11 +7,13 @@ import { MediaQueryService } from '@app/services/media-query.service';
   templateUrl: './apps.component.html',
   styleUrls: ['../../shared/page-styles.css', './apps.component.css'],
   animations: [routerTransition],
-  host: { '[@routerTransition]': ''}
+  host: { '[@routerTransition]': '' }
 })
 export class AppsComponent implements OnInit {
 
   deviceGroup = "desktop";
+  private bimMapSlides: Array<any> = [];
+  private bimSatelliteSlides: Array<any> = [];
   private cwHomeSlides: Array<any> = [];
   private cwLockSlides: Array<any> = [];
   private cwDetailSlides: Array<any> = [];
@@ -25,20 +27,60 @@ export class AppsComponent implements OnInit {
     this.addSlides();
   }
 
-  panelChanged(panel){
+  panelChanged(panel) {
     console.log(panel);
   }
-  openChange($e, group){
+  openChange($e, group) {
     console.log($e);
     console.log(group);
   }
 
-  isOpen(group){
+  isOpen(group) {
     console.log(group);
     return true;
   }
 
   addSlides() {
+    this.bimMapSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_welcome_and_explanation.jpg',
+      text: 'Layout and explanations',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimMapSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_login.jpg',
+      text: 'Login',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimMapSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_filters.jpg',
+      text: 'Map layer filters',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimMapSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_create_boundary.jpg',
+      text: 'Creating a new boundary',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimSatelliteSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_satellite_boundaries.jpg',
+      text: 'Various boundaries in wilderness',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimSatelliteSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_create_content.jpg',
+      text: 'Adding new content to a boundary',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimSatelliteSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_boundary_selected.jpg',
+      text: 'Content available for selected boundary',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
+    this.bimSatelliteSlides.push({
+      image: '../../assets/images/BIM/BIM_v1_content_example.jpg',
+      text: 'Content details for selected boundary',
+      alt: 'Layout and explanations for BIM Earth main page'
+    });
     /*this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_open.png',
       text: 'menu open',

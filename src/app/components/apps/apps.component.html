@@ -61,6 +61,59 @@
 
     <br>
     <mat-accordion>
+      <mat-expansion-panel #bimPanel (opened)="panelChanged(bimPanel)" closed="panelChanged(bimPanel)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>BIM Earth</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h4>Basic map examples</h4>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="carouselset">
+              <div class="app-header">
+                <p>some explanation here</p>
+              </div>
+              <div class="carousel-wrapper">
+                <carousel [interval]="6000" [noWrap]="false">
+                  <slide class="carousel-slide" *ngFor="let slide of bimMapSlides; let index=index" [active]="slide.active">
+                    <img [src]="slide.image" [alt]="slide.alt">
+                    <div class="carousel-caption">
+                      <h4>{{ slide.text }}</h4>
+                    </div>
+                  </slide>
+                </carousel>
+              </div>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h4>Satellite and content examples</h4>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="carouselset">
+              <div class="app-header">
+                <p>some explanation here</p>
+              </div>
+              <div class="carousel-wrapper">
+                <carousel [interval]="6000" [noWrap]="false">
+                  <slide class="carousel-slide" *ngFor="let slide of bimSatelliteSlides; let index=index" [active]="slide.active">
+                    <img [src]="slide.image" [alt]="slide.alt">
+                    <div class="carousel-caption">
+                      <h4>{{ slide.text }}</h4>
+                    </div>
+                  </slide>
+                </carousel>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
       <mat-expansion-panel #cwPanel (opened)="panelChanged(cwPanel)" (closed)="panelChanged(cwPanel)">
         <mat-expansion-panel-header>
           <mat-panel-title>
