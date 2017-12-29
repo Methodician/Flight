@@ -14,6 +14,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 // material design
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 //  Custom modules
 import { AppRoutingModule } from './app-rounting.module';
@@ -59,7 +60,8 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [
     MediaQueryService,

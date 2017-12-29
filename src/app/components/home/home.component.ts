@@ -6,7 +6,7 @@ import { routerTransition } from '@animations/router.animations';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [routerTransition],
-  host: {'[@routerTransition]': ''}
+  host: { '[@routerTransition]': '' }
 })
 export class HomeComponent implements OnInit {
 
