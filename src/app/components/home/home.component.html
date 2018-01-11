@@ -4,7 +4,9 @@
 SECTION 1.1 - HERO IMAGE/PAGE TITLE
 ====================================  
 -->
-<section id="hero" data-type="background" data-speed="5">
+<section id="hero"
+         data-type="background"
+         data-speed="5">
   <!-- higher data-speed# = slower drag -->
 
   <article>
@@ -16,7 +18,7 @@ SECTION 1.1 - HERO IMAGE/PAGE TITLE
             <!-- <a routerLink="../about">JACOB JOHNSTON &#58; TRICIA MENDOZA</a> -->
           </p>
           <h1 id="homeHeading">FLIGHT</h1>
-          <p>&#123; &#123; WEB DEV &amp; DESIGN | ENTREPRENEURIAL CONSULTING &#125; &#125;</p>
+          <p>empowering entrepreneurs and idea people to lift off</p>
         </div>
       </div>
 
@@ -30,57 +32,45 @@ SECTION 1.1 - HERO IMAGE/PAGE TITLE
     <!-- container -->
   </article>
   <!--<div class="hero-img-container">-->
-  <img id="heroImg" src="../../assets/images/flightLogo_notext.png" alt="Flight logo">
+  <img id="heroImg"
+       src="../../assets/images/flightLogo_notext.png"
+       alt="Flight logo">
   <!--</div>-->
 </section>
 <!-- hero -->
 
 <!-- 
 ====================================
-SECTION 1.2 - OVERVIEW
+SECTION 1.2 - OFFERINGS
 ==================================== 
 -->
 
-
-<section class="darkBGtitle mat-typography" id="overview">
+<section class="darkBGtitle mat-typography"
+         id="overview">
   <h2>WE DO AWESOME RIGHT</h2>
-  <h4 id="awesome-p">A boutique web development and design agency offering startup and entrepreneurial consulting</h4>
-  <h3 id="awesome-h3" class="italic">. . . at your service . . .</h3>
+  <h4 class="awesome-p">A boutique web development and design agency offering startup and entrepreneurial consulting</h4>
+  <h3 class="italic">. . . at your service . . .</h3>
+  <p class="what-we-do">At Flight, we're mastering the art of the MVP. We're honing in on the optimal combo of lean startup best practices, agile
+    development methodologies, and awesome sauce. We've assembled a tech stack (combination of tools and technologies used
+    to create software) which allows for affordable rapid prototyping that can be scaled and transitioned into enterprise-scale
+    services without starting from scratch. That means we can leverage all the code and work we did to launch your MVP while
+    we're building and scaling your next-big-thing.</p>
   <p class="what-we-do">If you have a great idea, entrepreneurial drive, and access to resources but you're having trouble formulating your first
-    moves, we can help!</p>
-  <p class="what-we-do">Our entrepreneurial consulting services are available as a part of a launch project or as a stand-alone service. At Flight,
-    we're mastering the art of the MVP. We're honing in on the optimal combo of lean startup best practices, agile development
-    methodologies, and awesome sauce. We've assembled a tech stack (combination of tools and technologies used to create
-    software) which allows for affordable rapid prototyping that can be scaled and transitioned into enterprise-scale services
-    without starting from scratch. That means we can leverage all the code and work we did to launch your MVP while we're
-    building and scaling your next-big-thing.</p>
+    moves or getting "off the ground", we can help!</p>
+  <p class="what-we-do">If you've had your dream project on the back burner because you're just not sure, consider a free concept validation session.
+    I can't ensure your idea
+    <i>will</i> work, but I can usually tell if something has no chance.</p>
   <p class="what-we-do">We also provide a full suite of branding, custom graphics and icons, and professional web design. You can order them as
     sides, appetizers, or as a core element of our primary engineering services.</p>
-  <!--<hr>-->
+  <hr>
+
   <div class="equidistant-container">
-    <a href="#icons-scrollpoint" class="overview-item">
-      <div class="overview-circle">
-        <img src="../../assets/images/services_icons.graphics.png" alt="Stuff and things..." class="overview-image">
-      </div>
-      <h3>Icons &amp; Graphics</h3>
-      <p>One of a kind, custom graphics and icons perfect to convey your meaning and captivate your audiance, while helping
-        you stand out from the crowd and directing the attention where it's needed most.</p>
-    </a>
-    <!--<hr>-->
-    <a href="#layout-scrollpoint" class="overview-item">
+    <a routerLink="../apps"
+       class="overview-item">
       <div class="overview-circle no-overflow">
-        <img src="../../assets/images/services_design.layout.png" alt="Stuff and things..." class="overview-image">
-      </div>
-      <h3>Design &amp; Layout</h3>
-      <p>
-        A minimalist aesthetic with careful use of color, line, and angle help tell your story or display your data in a clean, easy-on-the-eyes
-        way that will keep viewers on your page longer and improve results.
-      </p>
-    </a>
-    <!--<hr>-->
-    <a routerLink="../apps" class="overview-item">
-      <div class="overview-circle no-overflow">
-        <img src="../../assets/images/services_apps.tools.png" alt="Stuff and things..." class="overview-image">
+        <img src="../../assets/images/services_apps.tools.png"
+             alt="Stuff and things..."
+             class="overview-image">
       </div>
       <h3>Apps &amp; Tools</h3>
       <p>
@@ -89,8 +79,108 @@ SECTION 1.2 - OVERVIEW
         <!-- You'd be surprised where a simple application can make a big impact in your business or workflow. -->
       </p>
     </a>
+    <a href="#layout-scrollpoint"
+       class="overview-item">
+      <div class="overview-circle no-overflow">
+        <img src="../../assets/images/services_design.layout.png"
+             alt="Stuff and things..."
+             class="overview-image">
+      </div>
+      <h3>Design &amp; Layout</h3>
+      <p>
+        A minimalist aesthetic with careful use of color, line, and angle help tell your story or display your data in a clean, easy-on-the-eyes
+        way that will keep viewers on your page longer and improve results.
+      </p>
+    </a>
+    <a href="#icons-scrollpoint"
+       class="overview-item">
+      <div class="overview-circle">
+        <img src="../../assets/images/services_icons.graphics.png"
+             alt="Stuff and things..."
+             class="overview-image">
+      </div>
+      <h3>Icons &amp; Graphics</h3>
+      <p>One of a kind, custom graphics and icons perfect to convey your meaning and captivate your audience, while helping
+        you stand out from the crowd and directing the attention where it's needed most.</p>
+    </a>
+  </div>
+
+  <hr>
+  <div class="equidistant-container">
+    <!-- <a href="#layout-scrollpoint"
+       class="overview-item"> -->
+    <div class="overview-item">
+      <div class="overview-circle no-overflow">
+        <img src="../../assets/images/thumbsup_lightbulb_validation.jpg"
+             alt="Stuff and things..."
+             class="overview-image">
+      </div>
+      <h3>Validation</h3>
+      <p>
+        I bet you've got a great idea. Not every great idea makes business sense though. Even if we determine the economics are off,
+        all is not lost. When a great idea isn't business ready, sometimes a pivot will put you on a valid path.
+      </p>
+    </div>
+    <!-- </a> -->
+    <!-- <a routerLink="../apps"
+       class="overview-item"> -->
+    <div class="overview-item">
+      <div class="overview-circle no-overflow">
+        <img src="../../assets/images/strategic_execution_zag.jpg"
+             alt="Stuff and things..."
+             class="overview-image">
+      </div>
+      <h3>Execution (&amp; strategy)</h3>
+      <p>
+        All our technical prowess and business savvy (strategic consulting) can only get you so far. We've learned that most of our
+        clients need help with
+        <i>execution</i>. Once your strategy is aligned with the market and the technology, all that's left is action.
+      </p>
+    </div>
+    <!-- </a> -->
+    <!-- <a href="#icons-scrollpoint"
+       class="overview-item"> -->
+    <div class="overview-item">
+      <div class="overview-circle">
+        <img src="../../assets/images/team_business_takeoff.png"
+             alt="Stuff and things..."
+             class="overview-image">
+      </div>
+      <h3>Takeoff</h3>
+      <p>A great idea can sit in the queue for years. At some point you have to check your fuel and equipment, taxi to the runway,
+        and go all-out. That's the scariest time for any self-respecting entrepreneur but we're here by your side every step
+        of the way.</p>
+    </div>
+    <!-- </a> -->
   </div>
 </section>
+
+<!-- 
+====================================
+SECTION 1.2 - OVERVIEW
+==================================== 
+-->
+
+<!-- <section class="darkBGtitle mat-typography"
+         id="overview">
+  <h2>WE DO AWESOME RIGHT</h2>
+  <h4 class="awesome-p">A boutique web development and design agency offering startup and entrepreneurial consulting</h4>
+  <h3 class="italic">. . . at your service . . .</h3>
+  <p class="what-we-do">At Flight, we're mastering the art of the MVP. We're honing in on the optimal combo of lean startup best practices, agile
+    development methodologies, and awesome sauce. We've assembled a tech stack (combination of tools and technologies used
+    to create software) which allows for affordable rapid prototyping that can be scaled and transitioned into enterprise-scale
+    services without starting from scratch. That means we can leverage all the code and work we did to launch your MVP while
+    we're building and scaling your next-big-thing.</p>
+  <p class="what-we-do">If you have a great idea, entrepreneurial drive, and access to resources but you're having trouble formulating your first
+    moves or getting "off the ground", we can help!</p>
+  <p class="what-we-do">If you've had your dream project on the back burner because you're just not sure, consider a free concept validation session.
+    I can't ensure your idea
+    <i>will</i> work, but I can usually tell if something has no chance.</p>
+
+  <p class="what-we-do">We also provide a full suite of branding, custom graphics and icons, and professional web design. You can order them as
+    sides, appetizers, or as a core element of our primary engineering services.</p>
+
+</section> -->
 
 <!-- overview -->
 
@@ -100,15 +190,7 @@ SECTION 2 - FEATURED WORK
 ==================================== 
 -->
 
-<div class="section-header whiteBGtitle">
-  <h2>RESPONSIVE</h2>
-</div>
-<section id="responsive">
-  <!--<h3>WORK</h3>-->
-  <img class="site-example laptop-example" src="../../assets/images/ss_laptop.png" alt="ScatterSchool laptop example">
-  <img class="site-example tablet-example" src="../../assets/images/ss_tablet.png" alt="ScatterSchool tablet example">
-  <img class="site-example mobile-example" src="../../assets/images/ss_mobile.png" alt="ScatterSchool mobile example">
-</section>
+
 
 <!-- 
 ====================================
@@ -121,14 +203,30 @@ SECTION 3 - ICONS/GRAPHICS
 </div>
 <section id="icons">
   <div class="section-box">
-    <img src="../../assets/images/featuresAlert.png" alt="ODA Features Automated Notificaitons Icon" class="icons-example">
-    <img src="../../assets/images/featuresArrow.png" alt="ODA Features Equipment Redeployment Icon" class="icons-example">
-    <img src="../../assets/images/featuresBid.png" alt="ODA Features Competitve Bidding Icon" class="icons-example">
-    <img src="../../assets/images/featuresCalendar.png" alt="ODA Features Demand Management Icon" class="icons-example">
-    <img src="../../assets/images/featuresClock.png" alt="ODA Features Usage Tracking Icon" class="icons-example">
-    <img src="../../assets/images/featuresCloud.png" alt="ODA Features Cloud-Based Icon" class="icons-example">
-    <img src="../../assets/images/featuresGraph.png" alt="ODA Features Optimization Icon" class="icons-example">
-    <img src="../../assets/images/featuresPin.png" alt="ODA Features Location Tracking Icon" class="icons-example">
+    <img src="../../assets/images/featuresAlert.png"
+         alt="ODA Features Automated Notificaitons Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresArrow.png"
+         alt="ODA Features Equipment Redeployment Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresBid.png"
+         alt="ODA Features Competitve Bidding Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresCalendar.png"
+         alt="ODA Features Demand Management Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresClock.png"
+         alt="ODA Features Usage Tracking Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresCloud.png"
+         alt="ODA Features Cloud-Based Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresGraph.png"
+         alt="ODA Features Optimization Icon"
+         class="icons-example">
+    <img src="../../assets/images/featuresPin.png"
+         alt="ODA Features Location Tracking Icon"
+         class="icons-example">
     <!--<img src="../../assets/images/featuresAlert.png" alt="" class="icons-example">-->
   </div>
 </section>
@@ -139,64 +237,115 @@ SECTION 3 - ICONS/GRAPHICS
 <section id="graphics">
   <!--<h3>GRAPHICS</h3>-->
   <div class="section-box">
-    <img src="../../assets/images/siterentals.png" alt="ODA Services Site Rentals Graphic" class="graphics-example">
-    <img src="../../assets/images/sitestays10.png" alt="ODA Services Site Stays Graphic" class="graphics-example">
-    <img src="../../assets/images/siteforecast9.png" alt="ODA Services Site Forecast Graphic" class="graphics-example">
-    <img src="../../assets/images/question4.png" alt="ODA Services Site Customization Graphic" class="graphics-example">
-    <img src="../../assets/images/story2.png" alt="ODA About Our Story Graphic" class="graphics-example">
-    <img src="../../assets/images/vision2.png" alt="ODA About Our Vision Graphic" class="graphics-example">
-    <img src="../../assets/images/technology2.png" alt="ODA About Our Technology Graphic" class="graphics-example">
+    <img src="../../assets/images/siterentals.png"
+         alt="ODA Services Site Rentals Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/sitestays10.png"
+         alt="ODA Services Site Stays Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/siteforecast9.png"
+         alt="ODA Services Site Forecast Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/question4.png"
+         alt="ODA Services Site Customization Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/story2.png"
+         alt="ODA About Our Story Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/vision2.png"
+         alt="ODA About Our Vision Graphic"
+         class="graphics-example">
+    <img src="../../assets/images/technology2.png"
+         alt="ODA About Our Technology Graphic"
+         class="graphics-example">
   </div>
 </section>
 
 <!-- 
 ====================================
-SECTION 4 - LAYOUT 
+SECTION 4 - APPS 
+====================================  
+-->
+<div class="section-header darkBGtitle">
+  <h2>WEB APPS &amp; TOOLS</h2>
+</div>
+<section id="apps"
+         class="web-screenshots darkBGtitle">
+  <div class="section-box">
+    <a routerLink="../apps">
+      <img src="../../assets/images/BIM/BIM_v1_content_example.jpg"
+           alt="BIM Earth content example"
+           class="sites-example">
+    </a>
+    <a routerLink="../apps">
+      <img src="../../assets/images/BIM/BIM_v1_filters.jpg"
+           alt="BIM Earth filters example"
+           class="sites-example">
+    </a>
+    <a routerLink="../apps">
+      <img src="../../assets/images/ODA/cw_menu_open_clean.png"
+           alt="Community Warehouse app with menu open"
+           class="sites-example">
+    </a>
+    <a routerLink="../apps">
+      <img src="../../assets/images/ODA/gss_tasks_modal_clean.png"
+           alt="Attendent management app with tasks modal open"
+           class="sites-example">
+    </a>
+
+  </div>
+</section>
+
+
+<!-- 
+====================================
+SECTION 5 - LAYOUT 
 ====================================  
 -->
 <a name="layout-scrollpoint"></a>
-<div class="section-header darkBGtitle">
+<div class="section-header whiteBGtitle">
   <h2>LAYOUT</h2>
 </div>
-<section id="sites" class="web-screenshots darkBGtitle">
+<section id="sites"
+         class="web-screenshots whiteBGtitle">
   <!--<h3>SITES</h3>-->
   <div class="section-box">
+    <a href="https://csscolormixer.com/">
+      <img src="../../assets/images/cssColorMixer_desktop.png"
+           alt="CSS Color Mixer"
+           class="sites-example">
+    </a>
     <!--<div class="sites-example">-->
-    <img src="../../assets/images/seoTips_desktop.png" alt="Layout for SEO Tips page" class="sites-example">
+    <img src="../../assets/images/seoTips_desktop.png"
+         alt="Layout for SEO Tips page"
+         class="sites-example">
     <!--</div>-->
     <!--<div class="sites-example">-->
-    <img src="../../assets/images/planetComparisonTable.png" alt="Layout for Planet Comparison table page" class="sites-example">
+    <img src="../../assets/images/planetComparisonTable.png"
+         alt="Layout for Planet Comparison table page"
+         class="sites-example">
     <!--</div>-->
     <!--<div class="sites-example">-->
-    <img src="../../assets/images/airlineSurvey.png" alt="Layout for airline survey" class="sites-example">
+    <img src="../../assets/images/airlineSurvey.png"
+         alt="Layout for airline survey"
+         class="sites-example">
     <!--</div>-->
   </div>
 </section>
 
-<!-- 
-====================================
-SECTION 5 - APPS 
-====================================  
--->
-<div class="section-header whiteBGtitle">
-  <h2>WEB APPS &amp; TOOLS</h2>
+<div class="section-header darkBGtitle">
+  <h2>RESPONSIVE</h2>
 </div>
-<section id="apps" class="web-screenshots whiteBGtitle">
-  <div class="section-box">
-    <a routerLink="../apps">
-      <img src="../../assets/images/BIM/BIM_v1_content_example.jpg" alt="BIM Earth content example" class="sites-example">
-    </a>
-    <a routerLink="../apps">
-      <img src="../../assets/images/BIM/BIM_v1_filters.jpg" alt="BIM Earth filters example" class="sites-example">
-    </a>
-    <a routerLink="../apps">
-      <img src="../../assets/images/ODA/cw_menu_open_clean.png" alt="Community Warehouse app with menu open" class="sites-example">
-    </a>
-    <a routerLink="../apps">
-      <img src="../../assets/images/ODA/gss_tasks_modal_clean.png" alt="Attendent management app with tasks modal open" class="sites-example">
-    </a>
-    <a href="https://csscolormixer.com/">
-      <img src="../../assets/images/cssColorMixer_desktop.png" alt="CSS Color Mixer" class="sites-example">
-    </a>
-  </div>
+<section id="responsive"
+         class="darkBGtitle">
+  <!--<h3>WORK</h3>-->
+  <img class="site-example laptop-example"
+       src="../../assets/images/ss_laptop.png"
+       alt="ScatterSchool laptop example">
+  <img class="site-example tablet-example"
+       src="../../assets/images/ss_tablet.png"
+       alt="ScatterSchool tablet example">
+  <img class="site-example mobile-example"
+       src="../../assets/images/ss_mobile.png"
+       alt="ScatterSchool mobile example">
 </section>

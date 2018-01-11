@@ -106,7 +106,7 @@ p {
   font-size: large;
 }
 
-#awesome-p {
+.awesome-p {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -290,11 +290,11 @@ p {
   .section-header {
     padding-top: 25px;
   }
-  #graphics,
+  /* #graphics,
   #sites,
   #apps {
     padding: 0 0 50px;
-  }
+  } */
   .laptop-example {
     margin-top: -103px;
   }
