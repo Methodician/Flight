@@ -46,11 +46,13 @@ export class AppsComponent implements OnInit {
       text: 'Layout and explanations',
       alt: 'Layout and explanations for BIM Earth main page'
     });
+
     this.bimMapSlides.push({
       image: '../../assets/images/BIM/BIM_v1_login.jpg',
       text: 'Login',
       alt: 'Layout and explanations for BIM Earth main page'
     });
+    
     this.bimMapSlides.push({
       image: '../../assets/images/BIM/BIM_v1_filters.jpg',
       text: 'Map layer filters',
